@@ -270,6 +270,11 @@ h4 {
     font-size: 24px;
 }
 
+
+p a {
+    color: var(--gray30);
+}
+
 .form input {
     display: inline-block;
     inline-size: 100%; 
@@ -279,26 +284,28 @@ h4 {
     font-size: 16px;
     border: 1px solid #616161;
     box-sizing: border-box;
-    border-radius: 90px;
+    border-radius: 90px; 
+    width: 100%;
 }
 
 .submit-section {
     margin-block-start: 16px;
     position: relative;
+    padding: 0;
+    inline-size: 100%;
     display: inline-block;
 }
 
-p a {
-    color: var(--gray30);
-}
 
 button { 
     padding: 12px 16px;
     position: absolute;
     background: #000000;
     border-radius: 90px;
-    inset-inline-start: 80%;     
+    inset-inline-end: 0;     
     color: #FFFFFF;
+    border: none;
+    line-height: 20px;
 }
 
 footer {
@@ -352,14 +359,35 @@ footer .footer-content p {
     .form input {
         display: inline-block;
         inline-size: auto; 
-        padding-block:12px;
+        padding-block:12px; 
         padding-inline: 16px;
         color: var(--gray30); 
         font-size: 16px;
         border: 1px solid #616161;
         box-sizing: border-box;
-        border-radius: 90px;
+        border-radius: 90px; 
     }
+    
+    .submit-section {
+        margin-block-start: 16px;
+        position: relative;
+        inline-size: auto;
+        display: inline-block;
+    }
+    
+
+    button { 
+        padding: 12px 16px;
+        position: absolute;
+        background: #000000;
+        border-radius: 90px;
+        inset-inline-end: -20%;     
+        color: #FFFFFF;
+        border: none;
+        line-height: 20px;
+    }
+    
+    
 
     .form input:first-child{
         margin-inline-end: 16px;
