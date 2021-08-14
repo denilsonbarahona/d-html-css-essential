@@ -345,12 +345,15 @@ h4 {
     font-size: 16px;
     border: 1px solid #000000;
     box-sizing: border-box;
-    border-radius: 90px;
+    border-radius: 90px; 
+    width: 100%;
 }
 
 .submit-section {
     margin-block-start: 16px;
     position: relative;
+    padding: 0;
+    inline-size: 100%;
     display: inline-block;
 }
 
@@ -364,7 +367,7 @@ button {
     background: #5551FF;
     border-radius: 90px;
     line-height: 20px;
-    inset-inline-start: 80%;     
+    inset-inline-end: 0;     
     color: #FFFFFF;
     border: none;
 }
@@ -435,6 +438,24 @@ footer .footer-content p {
         border: 1px solid #616161;
         box-sizing: border-box;
         border-radius: 90px;
+    }
+
+    .submit-section {
+        margin-block-start: 16px;
+        position: relative;
+        inline-size: auto;
+        display: inline-block;
+    }
+    
+    button { 
+        padding: 12px 16px;
+        position: absolute;
+        background: #5551FF;
+        border-radius: 90px;
+        inset-inline-end: -20%;     
+        color: #FFFFFF;
+        border: none;
+        line-height: 20px;
     }
 
     .form input:first-child{
