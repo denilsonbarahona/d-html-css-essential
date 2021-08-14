@@ -281,7 +281,7 @@ input[type="text"] {
     border-radius: 90px; 
     border: none;
     position: absolute;
-    left: 65%;    
+    right: 0;    
     font-size: 12px;
     line-height: 16px;
     font-style: normal;
@@ -377,7 +377,7 @@ footer .wrapper {
         border-radius: 90px; 
         border: none;
         position: absolute;
-        left: 80%;    
+        right: -20%;    
         font-size: 16px;
         line-height: 20px;
         font-style: normal;
