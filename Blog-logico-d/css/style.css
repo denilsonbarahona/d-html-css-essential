@@ -1,0 +1,443 @@
+:root {
+    font-size: 16px;
+    --gray30: #212121; 
+    --gray20: #616161;
+    --gray10: #E5E5E5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #FFFFFF;
+}
+ 
+.hero {
+    block-size: 96px;
+    background: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url("../Image/pattren-2.png");
+}
+
+.main {
+    text-align: center;
+}
+
+.header {
+    margin-inline-end: 24px;
+}
+
+.upper-header p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.upper-header {
+    margin-block-end: 48px;
+}
+
+.upper-header ul {
+    padding: 0;
+}
+
+.bottom-header ol {
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-header ol li {
+    margin-block: 0;    
+}
+
+.bottom-header ol li a {
+    padding: 8px;
+    display: block;
+    inline-size: 100%;  
+}
+
+
+.bottom-header ol li a:hover {
+    background: #5551FF;
+    color: #fff;
+}
+
+.bottom-header {
+    counter-reset: index; 
+}
+
+.bottom-header ol li a{
+    counter-increment: index;
+}
+
+.bottom-header ol li a::before{
+    content: counter(index) ". ";
+}
+
+
+.upper-header ul li {
+    margin-block: 0;
+    list-style: none;
+}
+
+.upper-header ul li a {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px;
+    display: block;
+    inline-size: 100%; 
+}
+
+.selected{
+    background: #000000;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.header-content {
+    padding-inline: 20px;
+}
+    
+header a {
+    color: var(--gray20);
+    text-decoration: none;
+}
+
+header ol li {
+    color: var(--gray20);
+}
+
+.section-content li {
+    color: var(--gray20);
+}
+
+header a:hover {
+    color:var(--gray30)
+}
+
+ 
+.header .wrapper {
+    position: relative;
+    padding-inline: 0;
+    margin-block-end: 64px;
+}
+
+
+
+.header ol li {
+    margin-block-start:8px ;
+}
+
+details summary {
+    font-weight: bold;
+}
+
+h1,h2,h3 {
+    color: var(--gray30);
+}
+
+h1 {
+ font-size: 24px;
+ font-weight: 700;
+ margin-block-start: 64px;
+ margin-block-end: 16px;
+}
+
+h1 + p {
+    margin-block-start: 16px;
+    margin-block-end: 40px;
+}
+
+hr {
+    border: 1px solid rgba(97, 97, 97, 0.2);
+}
+
+.logo {
+    margin-block-end: 16px; 
+    margin-block-start: 40px;
+}
+
+h2 {
+ font-size: 24px;   
+ font-weight: normal;
+ margin-block-start: 63px; 
+ margin-block-end: 40px;
+}
+
+.first h2 { 
+    margin-block-start: 40px; 
+    margin-block-end: 0;
+}
+
+.first h3 {
+    margin-block-start: 0px;
+}
+
+
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-block-start: 40px;
+}
+
+pre {
+    background-color: var(--gray10);
+    border-radius: 8px;
+    padding-block: 40px;
+    padding-inline: 40px;
+    overflow: auto;
+    color:var(--gray30);
+    text-align:start;
+    border: 8px solid  #5551FF;
+    box-shadow: -10px 10px 0px #ABAAF6; 
+}
+
+.section-content {
+    counter-reset: titlelist;
+}
+
+.section-content h3 {
+    counter-increment: titlelist;
+}
+
+.section-content h3::before{
+    content: counter(titlelist) ". ";
+}
+
+ 
+.section-content img {
+    max-inline-size: 100%;
+}
+
+p {
+    color: var(--font);
+    font-size: 16px;
+    margin-block-end: 16px;
+}
+
+.header-content, .header-content p {
+    color: var(--gray30)
+}
+ 
+.wrapper {
+    max-inline-size: 902px;
+    margin: auto;
+    padding-inline: 16px;
+}
+
+blockquote {  
+    color: #000000;
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    margin-inline: 0;
+    text-align: start;
+    padding-inline-start: 16px;
+    border-inline-start: 4px solid #5551FF;
+}
+
+.last-block-container {
+    text-align: start;
+}
+
+blockquote p span::before{
+    content: "-";
+}
+
+.section-content:last-child { 
+    margin-block-start: 122px;
+}
+
+.section-content ol, .section-content ul {
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    text-align: start;
+}
+
+.section-content ul li{
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    color: var(--gray30);
+    list-style: none; 
+    position: relative; 
+}
+.section-content ul li span  {
+    
+    display: inline-block; 
+    position: absolute;
+    block-size: 8px;
+    background: #5551FF;
+    box-sizing: border-box;
+    inline-size: 8px;
+    border-radius: 50%; 
+    inset-block-start: 25%;
+} 
+
+.section-content ul li p  {
+    display: inline-block; 
+    max-inline-size: 90%;
+    box-sizing: border-box;
+    
+} 
+
+.section-content ul li p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+    margin-inline-start: 20px;
+}
+ 
+
+.section-content ol li{
+    color: var(--gray30);
+}
+
+
+.slider-container {
+    display: block;
+    overflow: hidden; /*esto es porque no queremos que los objetos dentro del contener sobresalgan del contenedor*/
+    scroll-behavior: smooth;
+    font-size: 0;
+    white-space: nowrap; /*con esto evitamos que objetos que son bloques realicen saltos de línea*/
+}
+
+.slider-slide .video{
+    margin: 0;
+    display: inline-block;/*porque por defecto los h1 son objetos de bloques 
+        necesitamos que sea inline-block porque los inline no pueden tener un alto o un ancho
+        pero si los de bloque, asi que de esta manera estamos compartiendo las caracteristicas de ambos
+        tipos de objetos*/
+    inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+    text-align: center;
+    margin-block-start: 10px; 
+    margin-block-end: 51px;
+}
+
+.slider-bullet {
+    display: inline-block; /*porque las etiquetas a por defecto son inlines y necesitamos darles un tamaño*/
+    block-size: 15px;
+    inline-size: 15px;
+    background: rgba(142, 45, 226, 0.5);
+    border-radius: 50%;
+}
+
+.slider-bullet:hover {
+    background: #5551FF;
+}
+
+h4 {
+    color: var(--gray30);
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.form input {
+    display: inline-block;
+    inline-size: 100%; 
+    padding-block:12px;
+    padding-inline: 16px;
+    color: var(--gray30); 
+    font-size: 16px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 90px;
+}
+
+.submit-section {
+    margin-block-start: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+p a {
+    color: var(--gray30);
+}
+
+button { 
+    padding: 12px 16px;
+    position: absolute;
+    background: #5551FF;
+    border-radius: 90px;
+    line-height: 20px;
+    inset-inline-start: 80%;     
+    color: #FFFFFF;
+    border: none;
+}
+
+footer {
+    background: #212429;
+    block-size: 174px;
+    margin-block-start: 80px;
+}
+
+footer .wrapper{
+    position: relative;
+    block-size: 100%; 
+    padding: 0; 
+}
+ 
+footer .footer-content { 
+    position: absolute;
+    inline-size: 100%;
+    text-align: center;
+    inset-block-start: 15%;
+    color: #fff;
+}
+
+footer .footer-content p { 
+    font-weight: normal; 
+    font-size: 24px;
+}
+
+@media screen and (min-width:1436px) {
+    .hero {
+        block-size: 350px;
+        background: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url("../Image/pattren-2.png");
+    }    
+
+    .header-content {
+        font-size: 14px; 
+        inline-size: 188px;
+        inset-inline-end: -250px;
+        position: absolute;
+    }
+    
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+ 
+    h2 {
+        font-size: 2em;   
+        font-weight: normal;
+        margin-block-start: 63px; 
+        margin-block-end: 40px;
+    }
+   
+    h3 {
+        font-size: 1.2em;
+        font-weight: normal;
+        margin-block-start: 40px;
+    }
+
+    .form input {
+        display: inline-block;
+        inline-size: auto; 
+        padding-block:12px;
+        padding-inline: 16px;
+        color: var(--gray30); 
+        font-size: 16px;
+        border: 1px solid #616161;
+        box-sizing: border-box;
+        border-radius: 90px;
+    }
+
+    .form input:first-child{
+        margin-inline-end: 16px;
+    }
+}
